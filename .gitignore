@@ -61,6 +61,8 @@ WebPublish/*
 #Cake
 tools/*
 !tools/packages.config
+**/tools/*
+!**/tools/packages.config
 
 .vs
 

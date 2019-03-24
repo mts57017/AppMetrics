@@ -13,17 +13,12 @@ var sign            = Argument<bool>("sign", false);
 // GLOBAL VARIABLES
 ///////////////////////////////////////////////////////////////////////////////
 var packPaths        = new [] {
-							Directory("./src/App.Metrics.AspNetCore"),
-							Directory("./src/App.Metrics.AspNetCore.Abstractions"),
-							Directory("./src/App.Metrics.AspNetCore.Core"),
-							Directory("./src/App.Metrics.AspNetCore.Endpoints"),
-							Directory("./src/App.Metrics.AspNetCore.Hosting"),
-							Directory("./src/App.Metrics.AspNetCore.Mvc"),
-							Directory("./src/App.Metrics.AspNetCore.Mvc.Core"),
-							Directory("./src/App.Metrics.AspNetCore.Reporting"),
-							Directory("./src/App.Metrics.AspNetCore.Routing"),	
-							Directory("./src/App.Metrics.AspNetCore.Tracking")
-						};
+                            Directory("./src/App.Metrics"),
+                            Directory("./src/App.Metrics.Abstractions"),
+                            Directory("./src/App.Metrics.Core"),
+                            Directory("./src/App.Metrics.Formatters.Json"),
+                            Directory("./src/App.Metrics.Formatters.Ascii")
+                        };
 var buildArtifacts      = Directory("./artifacts");
 
 var isAppVeyor          = AppVeyor.IsRunningOnAppVeyor;
@@ -202,6 +197,7 @@ Task("Pack")
         OutputDirectory = buildArtifacts + Directory("packages"),
         NoBuild = true
     };
+
 
     foreach(var packPath in packPaths)
     {
