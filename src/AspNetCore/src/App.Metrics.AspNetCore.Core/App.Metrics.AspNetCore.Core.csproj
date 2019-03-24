@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>App Metrics ASP.NET Core core components.</Description>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>App.Metrics.AspNetCore</RootNamespace>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <PackageTags>appmetrics;aspnetcore;metrics</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="App.Metrics.Core" Version="$(AppMetricsCoreVersion)" />
+    <PackageReference Include="App.Metrics.Extensions.Configuration" Version="$(AppMetricsMicrosoftExtensionsVersion)" />
+    <PackageReference Include="App.Metrics.Extensions.DependencyInjection" Version="$(AppMetricsMicrosoftExtensionsVersion)" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Extensions" Version="$(MicrosoftExtensionsVersion)" />
+    <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="$(MicrosoftExtensionsVersion)" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="$(MicrosoftExtensionsVersion)" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\App.Metrics.AspNetCore.Abstractions\App.Metrics.AspNetCore.Abstractions.csproj" />
+  </ItemGroup>
+
+</Project>
