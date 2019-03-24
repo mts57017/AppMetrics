@@ -57,6 +57,8 @@ BuildOutput
 BuildOutput/*
 WebPublish
 WebPublish/*
+nuget
+nuget/*
 
 #Cake
 tools/*
