@@ -45,6 +45,16 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MetricsReceiveSanboxApi", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "App.Metrics.Reporting.Socket.Facts", "test\App.Metrics.Reporting.Socket.Facts\App.Metrics.Reporting.Socket.Facts.csproj", "{F168E7F2-D0BE-4010-B30D-C95990225F32}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "App.Metrics.Formatters.GrafanaCloudHostedMetrics", "src\App.Metrics.Formatters.GrafanaCloudHostedMetrics\App.Metrics.Formatters.GrafanaCloudHostedMetrics.csproj", "{9765F358-0F22-45DE-A248-7AE013302BE0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "App.Metrics.Reporting.GrafanaCloudHostedMetrics", "src\App.Metrics.Reporting.GrafanaCloudHostedMetrics\App.Metrics.Reporting.GrafanaCloudHostedMetrics.csproj", "{469E1726-F50A-436D-89CF-FA80274D9B5E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GrafanaCloudHostedMetrics", "GrafanaCloudHostedMetrics", "{545237F6-9D1E-4FD2-87C7-FA1431500209}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GrafanaCloudHostedMetrics", "GrafanaCloudHostedMetrics", "{DEFBA9AB-0F83-48A4-9049-A796F68A9F10}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "App.Metrics.Reporting.GrafanaCloudHostedMetrics.Facts", "test\App.Metrics.Reporting.GrafanaCloudHostedMetrics.Facts\App.Metrics.Reporting.GrafanaCloudHostedMetrics.Facts.csproj", "{26B4EC0C-850E-4968-B6C7-D116EEDDF4DA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -95,6 +105,18 @@ Global
 		{F168E7F2-D0BE-4010-B30D-C95990225F32}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F168E7F2-D0BE-4010-B30D-C95990225F32}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F168E7F2-D0BE-4010-B30D-C95990225F32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9765F358-0F22-45DE-A248-7AE013302BE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9765F358-0F22-45DE-A248-7AE013302BE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9765F358-0F22-45DE-A248-7AE013302BE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9765F358-0F22-45DE-A248-7AE013302BE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{469E1726-F50A-436D-89CF-FA80274D9B5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{469E1726-F50A-436D-89CF-FA80274D9B5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{469E1726-F50A-436D-89CF-FA80274D9B5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{469E1726-F50A-436D-89CF-FA80274D9B5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26B4EC0C-850E-4968-B6C7-D116EEDDF4DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26B4EC0C-850E-4968-B6C7-D116EEDDF4DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26B4EC0C-850E-4968-B6C7-D116EEDDF4DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26B4EC0C-850E-4968-B6C7-D116EEDDF4DA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -112,6 +134,11 @@ Global
 		{CEC70E9D-D384-4473-910B-4E96936B3B7D} = {DD2E4647-7125-4CE3-9BA5-B45A26113A31}
 		{9D0AE951-114B-4590-85D5-56C06652A19A} = {887BC5A0-8ED7-4460-851D-5EFC4AE828DE}
 		{F168E7F2-D0BE-4010-B30D-C95990225F32} = {DD2E4647-7125-4CE3-9BA5-B45A26113A31}
+		{9765F358-0F22-45DE-A248-7AE013302BE0} = {545237F6-9D1E-4FD2-87C7-FA1431500209}
+		{469E1726-F50A-436D-89CF-FA80274D9B5E} = {545237F6-9D1E-4FD2-87C7-FA1431500209}
+		{545237F6-9D1E-4FD2-87C7-FA1431500209} = {2D805782-756E-4C98-B22E-F502BEE95318}
+		{DEFBA9AB-0F83-48A4-9049-A796F68A9F10} = {DD2E4647-7125-4CE3-9BA5-B45A26113A31}
+		{26B4EC0C-850E-4968-B6C7-D116EEDDF4DA} = {DEFBA9AB-0F83-48A4-9049-A796F68A9F10}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {492C97B1-706A-4357-B3F7-EFB6AFB1F6C6}

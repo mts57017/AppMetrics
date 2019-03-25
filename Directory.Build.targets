@@ -27,6 +27,8 @@
     <PackageReference Update="App.Metrics.Reporting.Http" Version="$(AppMetricsVersion)" />
     <PackageReference Update="App.Metrics.Reporting.Socket" Version="$(AppMetricsVersion)" />
     <PackageReference Update="App.Metrics.Reporting.TextFile" Version="$(AppMetricsVersion)" />
+    <PackageReference Update="App.Metrics.Formatters.GrafanaCloudHostedMetrics" Version="$(AppMetricsVersion)" />
+    <PackageReference Update="App.Metrics.Reporting.GrafanaCloudHostedMetrics" Version="$(AppMetricsVersion)" />
 
     <!-- AspNetCore -->
     <PackageReference Update="App.Metrics.AspNetCore" Version="$(AppMetricsVersion)" />

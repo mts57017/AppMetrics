@@ -16,7 +16,9 @@ var packPaths        = new [] {
 							    Directory("./src/App.Metrics.Reporting.Console"),
 							    Directory("./src/App.Metrics.Reporting.Http"),
 								Directory("./src/App.Metrics.Reporting.Socket"),
-								Directory("./src/App.Metrics.Reporting.TextFile")
+								Directory("./src/App.Metrics.Reporting.TextFile"),
+                                Directory("./src/App.Metrics.Reporting.GrafanaCloudHostedMetrics"), 
+								Directory("./src/App.Metrics.Formatters.GrafanaCloudHostedMetrics") 
 						};
 var buildArtifacts      = Directory("./artifacts");
 
