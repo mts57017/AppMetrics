@@ -1,7 +1,6 @@
 <Project>
 	<Import Project="dependencies.props" />
 	<Import Project="..\..\..\build\shared.props" />
-	<Import Project="..\..\..\build\version.props" />
 
 	<PropertyGroup>
 		<RepositoryUrl>git://github.com/AppMetrics/AppMetrics</RepositoryUrl>

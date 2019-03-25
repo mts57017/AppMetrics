@@ -1,0 +1,28 @@
+<Project>
+
+  <PropertyGroup>
+    <AppMetricsVersion>3.1.0-*</AppMetricsVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Update="App.Metrics" Version="$(AppMetricsVersion)" />
+    <PackageReference Update="App.Metrics.Core" Version="$(AppMetricsVersion)" />
+    <PackageReference Update="App.Metrics.Abstractions" Version="$(AppMetricsVersion)" />
+    <PackageReference Update="App.Metrics.Formatters.Ascii" Version="$(AppMetricsVersion)" />
+    <PackageReference Update="App.Metrics.Formatters.Json" Version="$(AppMetricsVersion)" />
+
+    <PackageReference Update="App.Metrics.AspNetCore" Version="$(AppMetricsVersion)" />
+    <PackageReference Update="App.Metrics.AspNetCore.Abstractions" Version="$(AppMetricsVersion)" />
+    <PackageReference Update="App.Metrics.AspNetCore.Core" Version="$(AppMetricsVersion)" />
+    <PackageReference Update="App.Metrics.AspNetCore.Endpoints" Version="$(AppMetricsVersion)" />
+    <PackageReference Update="App.Metrics.AspNetCore.Hosting" Version="$(AppMetricsVersion)" />
+    <PackageReference Update="App.Metrics.AspNetCore.HostingStartup" Version="$(AppMetricsVersion)" />
+    <PackageReference Update="App.Metrics.AspNetCore.Mvc" Version="$(AppMetricsVersion)" />
+    <PackageReference Update="App.Metrics.AspNetCore.Mvc.Core" Version="$(AppMetricsVersion)" />
+    <PackageReference Update="App.Metrics.AspNetCore.Reporting" Version="$(AppMetricsVersion)" />
+    <PackageReference Update="App.Metrics.AspNetCore.Routing" Version="$(AppMetricsVersion)" />
+    <PackageReference Update="App.Metrics.AspNetCore.Tracking" Version="$(AppMetricsVersion)" />
+    
+    <PackageReference Update="Microsoft.SourceLink.GitHub" Version="1.0.0-beta2-18618-05" PrivateAssets="All" />
+  </ItemGroup>
+</Project>
