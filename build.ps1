@@ -16,6 +16,19 @@ if ($LASTEXITCODE -ne 0)
 
 Copy-Item -path .\src\Core\artifacts\packages\*.nupkg -Destination .\nuget
 
+# health
+"######### Health #########"
+set-location ./src/Health
+& ./build.ps1 $args
+Set-Location $cd
+
+if ($LASTEXITCODE -ne 0)
+{
+    exit $LASTEXITCODE
+}
+
+Copy-Item -path .\src\Health\artifacts\packages\*.nupkg -Destination .\nuget
+
 # extensions
 "######### Extensions #########"
 set-location ./src/Extensions

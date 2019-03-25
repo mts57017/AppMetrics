@@ -33,6 +33,20 @@
     <PackageReference Update="App.Metrics.AspNetCore.Reporting" Version="$(AppMetricsVersion)" />
     <PackageReference Update="App.Metrics.AspNetCore.Routing" Version="$(AppMetricsVersion)" />
     <PackageReference Update="App.Metrics.AspNetCore.Tracking" Version="$(AppMetricsVersion)" />
+
+      <!-- Health -->
+    <PackageReference Update="App.Metrics.Health" Version="$(AppMetricsVersion)" />
+    <PackageReference Update="App.Metrics.Health.Abstractions" Version="$(AppMetricsVersion)" />
+    <PackageReference Update="App.Metrics.AspNetCore.Core" Version="$(AppMetricsVersion)" />
+    <PackageReference Update="App.Metrics.Health.Checks.Http" Version="$(AppMetricsVersion)" />
+    <PackageReference Update="App.Metrics.Health.Checks.Network" Version="$(AppMetricsVersion)" />
+    <PackageReference Update="App.Metrics.Health.Checks.Process" Version="$(AppMetricsVersion)" />
+    <PackageReference Update="App.Metrics.Health.Checks.Sql" Version="$(AppMetricsVersion)" />
+    <PackageReference Update="App.Metrics.Health.Core" Version="$(AppMetricsVersion)" />
+    <PackageReference Update="App.Metrics.Health.Formatters.Ascii" Version="$(AppMetricsVersion)" />
+    <PackageReference Update="App.Metrics.Health.Formatters.Json" Version="$(AppMetricsVersion)" />
+    <PackageReference Update="App.Metrics.Health.Reporting.Metrics" Version="$(AppMetricsVersion)" />
+    <PackageReference Update="App.Metrics.Health.Reporting.Slack" Version="$(AppMetricsVersion)" />
     
     <PackageReference Update="Microsoft.SourceLink.GitHub" Version="1.0.0-beta2-18618-05" PrivateAssets="All" />
   </ItemGroup>
