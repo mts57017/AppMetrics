@@ -54,3 +54,16 @@ if ($LASTEXITCODE -ne 0)
 }
 
 Copy-Item -path .\src\AspNetCore\artifacts\packages\*.nupkg -Destination .\nuget
+
+# aspnetcore health
+"######### AspNetCoreHealth #########"
+set-location ./src/AspNetCoreHealth
+& ./build.ps1 $args
+Set-Location $cd
+
+if ($LASTEXITCODE -ne 0)
+{
+    exit $LASTEXITCODE
+}
+
+Copy-Item -path .\src\AspNetCoreHealth\artifacts\packages\*.nupkg -Destination .\nuget
