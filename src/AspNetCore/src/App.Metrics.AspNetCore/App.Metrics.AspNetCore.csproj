@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="App.Metrics" Version="$(AppMetricsCoreVersion)" />
+    <PackageReference Include="App.Metrics" />
     <PackageReference Include="App.Metrics.Extensions.Hosting" Version="$(AppMetricsMicrosoftExtensionsVersion)" />
   </ItemGroup>
   

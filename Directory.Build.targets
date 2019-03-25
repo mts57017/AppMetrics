@@ -16,7 +16,6 @@
     <PackageReference Update="App.Metrics.AspNetCore.Core" Version="$(AppMetricsVersion)" />
     <PackageReference Update="App.Metrics.AspNetCore.Endpoints" Version="$(AppMetricsVersion)" />
     <PackageReference Update="App.Metrics.AspNetCore.Hosting" Version="$(AppMetricsVersion)" />
-    <PackageReference Update="App.Metrics.AspNetCore.HostingStartup" Version="$(AppMetricsVersion)" />
     <PackageReference Update="App.Metrics.AspNetCore.Mvc" Version="$(AppMetricsVersion)" />
     <PackageReference Update="App.Metrics.AspNetCore.Mvc.Core" Version="$(AppMetricsVersion)" />
     <PackageReference Update="App.Metrics.AspNetCore.Reporting" Version="$(AppMetricsVersion)" />
