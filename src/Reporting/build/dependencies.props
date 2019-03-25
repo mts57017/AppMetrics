@@ -1,10 +1,11 @@
 <Project>
   <PropertyGroup>
     <AspNetCoreVersion>2.1.6</AspNetCoreVersion>
-    <AspNetCoreMvcVersion>2.1.3</AspNetCoreMvcVersion>
+    <AspNetCoreMvcVersion>2.2.0</AspNetCoreMvcVersion>
     <CoreFxVersion>4.4.0</CoreFxVersion>
     <DependencyModelVersion>2.1.1</DependencyModelVersion>
     <MicrosoftExtensionsVersion>2.1.1</MicrosoftExtensionsVersion>
+    <ProtobufNetVersion>2.4.0</ProtobufNetVersion>
     <MoqVersion>4.10.0</MoqVersion>
     <NewtonsoftVersion>11.0.2</NewtonsoftVersion>
     <TestSdkVersion>15.9.0</TestSdkVersion>
