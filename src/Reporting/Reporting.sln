@@ -55,6 +55,16 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GrafanaCloudHostedMetrics",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "App.Metrics.Reporting.GrafanaCloudHostedMetrics.Facts", "test\App.Metrics.Reporting.GrafanaCloudHostedMetrics.Facts\App.Metrics.Reporting.GrafanaCloudHostedMetrics.Facts.csproj", "{26B4EC0C-850E-4968-B6C7-D116EEDDF4DA}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "InfluxDB", "InfluxDB", "{F7356ACC-64BE-48BF-A9C8-864AA1C3DA5A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "InfluxDB", "InfluxDB", "{3B064A0E-B6B6-41A3-BFC1-F4734E16EBA3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "App.Metrics.Formatters.InfluxDB", "src\App.Metrics.Formatters.InfluxDB\App.Metrics.Formatters.InfluxDB.csproj", "{CCEDF308-8A1D-4EB4-8779-D6DA84E70DA0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "App.Metrics.Reporting.InfluxDB.Facts", "test\App.Metrics.Reporting.InfluxDB.Facts\App.Metrics.Reporting.InfluxDB.Facts.csproj", "{5EBF6269-F5C9-42B1-AFDA-C3FBC3340903}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "App.Metrics.Reporting.InfluxDB", "src\App.Metrics.Reporting.InfluxDB\App.Metrics.Reporting.InfluxDB.csproj", "{92CF02D3-0D06-494D-908F-0A02C471284F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -117,6 +127,18 @@ Global
 		{26B4EC0C-850E-4968-B6C7-D116EEDDF4DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{26B4EC0C-850E-4968-B6C7-D116EEDDF4DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{26B4EC0C-850E-4968-B6C7-D116EEDDF4DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCEDF308-8A1D-4EB4-8779-D6DA84E70DA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCEDF308-8A1D-4EB4-8779-D6DA84E70DA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCEDF308-8A1D-4EB4-8779-D6DA84E70DA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCEDF308-8A1D-4EB4-8779-D6DA84E70DA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EBF6269-F5C9-42B1-AFDA-C3FBC3340903}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EBF6269-F5C9-42B1-AFDA-C3FBC3340903}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EBF6269-F5C9-42B1-AFDA-C3FBC3340903}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EBF6269-F5C9-42B1-AFDA-C3FBC3340903}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92CF02D3-0D06-494D-908F-0A02C471284F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92CF02D3-0D06-494D-908F-0A02C471284F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92CF02D3-0D06-494D-908F-0A02C471284F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92CF02D3-0D06-494D-908F-0A02C471284F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -139,6 +161,11 @@ Global
 		{545237F6-9D1E-4FD2-87C7-FA1431500209} = {2D805782-756E-4C98-B22E-F502BEE95318}
 		{DEFBA9AB-0F83-48A4-9049-A796F68A9F10} = {DD2E4647-7125-4CE3-9BA5-B45A26113A31}
 		{26B4EC0C-850E-4968-B6C7-D116EEDDF4DA} = {DEFBA9AB-0F83-48A4-9049-A796F68A9F10}
+		{F7356ACC-64BE-48BF-A9C8-864AA1C3DA5A} = {2D805782-756E-4C98-B22E-F502BEE95318}
+		{3B064A0E-B6B6-41A3-BFC1-F4734E16EBA3} = {DD2E4647-7125-4CE3-9BA5-B45A26113A31}
+		{CCEDF308-8A1D-4EB4-8779-D6DA84E70DA0} = {F7356ACC-64BE-48BF-A9C8-864AA1C3DA5A}
+		{5EBF6269-F5C9-42B1-AFDA-C3FBC3340903} = {3B064A0E-B6B6-41A3-BFC1-F4734E16EBA3}
+		{92CF02D3-0D06-494D-908F-0A02C471284F} = {F7356ACC-64BE-48BF-A9C8-864AA1C3DA5A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {492C97B1-706A-4357-B3F7-EFB6AFB1F6C6}

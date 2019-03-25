@@ -29,6 +29,8 @@
     <PackageReference Update="App.Metrics.Reporting.TextFile" Version="$(AppMetricsVersion)" />
     <PackageReference Update="App.Metrics.Formatters.GrafanaCloudHostedMetrics" Version="$(AppMetricsVersion)" />
     <PackageReference Update="App.Metrics.Reporting.GrafanaCloudHostedMetrics" Version="$(AppMetricsVersion)" />
+    <PackageReference Update="App.Metrics.Formatters.InfluxDB" Version="$(AppMetricsVersion)" />
+    <PackageReference Update="App.Metrics.Reporting.InfluxDB" Version="$(AppMetricsVersion)" />
 
     <!-- AspNetCore -->
     <PackageReference Update="App.Metrics.AspNetCore" Version="$(AppMetricsVersion)" />
