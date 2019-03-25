@@ -47,7 +47,7 @@
     <PackageReference Update="App.Metrics.AspNetCore.Routing" Version="$(AppMetricsVersion)" />
     <PackageReference Update="App.Metrics.AspNetCore.Tracking" Version="$(AppMetricsVersion)" />
 
-      <!-- Health -->
+    <!-- Health -->
     <PackageReference Update="App.Metrics.Health" Version="$(AppMetricsVersion)" />
     <PackageReference Update="App.Metrics.Health.Abstractions" Version="$(AppMetricsVersion)" />
     <PackageReference Update="App.Metrics.AspNetCore.Core" Version="$(AppMetricsVersion)" />
@@ -61,11 +61,17 @@
     <PackageReference Update="App.Metrics.Health.Reporting.Metrics" Version="$(AppMetricsVersion)" />
     <PackageReference Update="App.Metrics.Health.Reporting.Slack" Version="$(AppMetricsVersion)" />
 
-      <!-- AspNetCore Health -->
+    <!-- AspNetCore Health -->
     <PackageReference Update="App.Metrics.AspNetCore.Health" Version="$(AppMetricsVersion)" />
     <PackageReference Update="App.Metrics.AspNetCore.Health.Core" Version="$(AppMetricsVersion)" />
     <PackageReference Update="App.Metrics.AspNetCore.Health.Endpoints" Version="$(AppMetricsVersion)" />
     <PackageReference Update="App.Metrics.AspNetCore.Health.Hosting" Version="$(AppMetricsVersion)" />
+
+    <!-- Azure -->
+    <PackageReference Update="App.Metrics.Health.Checks.AzureDocumentDB" Version="$(AppMetricsVersion)" />
+    <PackageReference Update="App.Metrics.Health.Checks.AzureEventHubs" Version="$(AppMetricsVersion)" />
+    <PackageReference Update="App.Metrics.Health.Checks.AzureServiceBus" Version="$(AppMetricsVersion)" />
+    <PackageReference Update="App.Metrics.Health.Checks.AzureStorage" Version="$(AppMetricsVersion)" />
     
     <PackageReference Update="Microsoft.SourceLink.GitHub" Version="1.0.0-beta2-18618-05" PrivateAssets="All" />
   </ItemGroup>
