@@ -22,6 +22,12 @@
     <PackageReference Update="App.Metrics.Health.Extensions.DependencyInjection" Version="$(AppMetricsVersion)" />
     <PackageReference Update="App.Metrics.Health.Extensions.Hosting" Version="$(AppMetricsVersion)" />
 
+    <!-- Reporting -->
+    <PackageReference Update="App.Metrics.Reporting.Console" Version="$(AppMetricsVersion)" />
+    <PackageReference Update="App.Metrics.Reporting.Http" Version="$(AppMetricsVersion)" />
+    <PackageReference Update="App.Metrics.Reporting.Socket" Version="$(AppMetricsVersion)" />
+    <PackageReference Update="App.Metrics.Reporting.TextFile" Version="$(AppMetricsVersion)" />
+
     <!-- AspNetCore -->
     <PackageReference Update="App.Metrics.AspNetCore" Version="$(AppMetricsVersion)" />
     <PackageReference Update="App.Metrics.AspNetCore.Abstractions" Version="$(AppMetricsVersion)" />
