@@ -9,7 +9,7 @@
 
   <ItemGroup>
     <PackageReference Include="App.Metrics" />
-    <PackageReference Include="App.Metrics.Extensions.Hosting" Version="$(AppMetricsMicrosoftExtensionsVersion)" />
+    <PackageReference Include="App.Metrics.Extensions.Hosting" />
   </ItemGroup>
   
   <ItemGroup>

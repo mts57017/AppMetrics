@@ -11,6 +11,15 @@
     <PackageReference Update="App.Metrics.Formatters.Ascii" Version="$(AppMetricsVersion)" />
     <PackageReference Update="App.Metrics.Formatters.Json" Version="$(AppMetricsVersion)" />
 
+    <PackageReference Update="App.Metrics.AppNetCore" Version="$(AppMetricsVersion)" />
+    <PackageReference Update="App.Metrics.Extensions.Configuration" Version="$(AppMetricsVersion)" />
+    <PackageReference Update="App.Metrics.Extensions.DependencyInjection" Version="$(AppMetricsVersion)" />
+    <PackageReference Update="App.Metrics.Extensions.Hosting" Version="$(AppMetricsVersion)" />
+    <PackageReference Update="App.Metrics.Health.AppNetCore" Version="$(AppMetricsVersion)" />
+    <PackageReference Update="App.Metrics.Health.Extensions.Configuration" Version="$(AppMetricsVersion)" />
+    <PackageReference Update="App.Metrics.Health.Extensions.DependencyInjection" Version="$(AppMetricsVersion)" />
+    <PackageReference Update="App.Metrics.Health.Extensions.Hosting" Version="$(AppMetricsVersion)" />
+
     <PackageReference Update="App.Metrics.AspNetCore" Version="$(AppMetricsVersion)" />
     <PackageReference Update="App.Metrics.AspNetCore.Abstractions" Version="$(AppMetricsVersion)" />
     <PackageReference Update="App.Metrics.AspNetCore.Core" Version="$(AppMetricsVersion)" />

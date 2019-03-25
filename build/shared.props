@@ -9,8 +9,9 @@
 		<GenerateDocumentationFile>true</GenerateDocumentationFile>
 		<PackageIconUrl>https://app-metrics.io/images/logo.png</PackageIconUrl>
 		<PackageProjectUrl>https://app-metrics.io/</PackageProjectUrl>
-		<PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+		<RepositoryUrl>git://github.com/AppMetrics/AppMetrics</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
+		<PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
 
  		<PublishRepositoryUrl>true</PublishRepositoryUrl>
     	<EmbedUntrackedSources>true</EmbedUntrackedSources>
