@@ -65,6 +65,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "App.Metrics.Reporting.Influ
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "App.Metrics.Reporting.InfluxDB", "src\App.Metrics.Reporting.InfluxDB\App.Metrics.Reporting.InfluxDB.csproj", "{92CF02D3-0D06-494D-908F-0A02C471284F}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Prometheus", "Prometheus", "{C5F8C44E-24E6-4A5D-800B-ED28548ABF4F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "App.Metrics.Formatters.Prometheus", "src\App.Metrics.Formatters.Prometheus\App.Metrics.Formatters.Prometheus.csproj", "{A627A402-7BA8-454C-8634-4F14CC1219EB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Prometheus", "Prometheus", "{DC95E9C9-286C-45D6-BE58-83E3F42DB96D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -139,6 +145,10 @@ Global
 		{92CF02D3-0D06-494D-908F-0A02C471284F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{92CF02D3-0D06-494D-908F-0A02C471284F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{92CF02D3-0D06-494D-908F-0A02C471284F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A627A402-7BA8-454C-8634-4F14CC1219EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A627A402-7BA8-454C-8634-4F14CC1219EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A627A402-7BA8-454C-8634-4F14CC1219EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A627A402-7BA8-454C-8634-4F14CC1219EB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -166,6 +176,9 @@ Global
 		{CCEDF308-8A1D-4EB4-8779-D6DA84E70DA0} = {F7356ACC-64BE-48BF-A9C8-864AA1C3DA5A}
 		{5EBF6269-F5C9-42B1-AFDA-C3FBC3340903} = {3B064A0E-B6B6-41A3-BFC1-F4734E16EBA3}
 		{92CF02D3-0D06-494D-908F-0A02C471284F} = {F7356ACC-64BE-48BF-A9C8-864AA1C3DA5A}
+		{C5F8C44E-24E6-4A5D-800B-ED28548ABF4F} = {2D805782-756E-4C98-B22E-F502BEE95318}
+		{A627A402-7BA8-454C-8634-4F14CC1219EB} = {C5F8C44E-24E6-4A5D-800B-ED28548ABF4F}
+		{DC95E9C9-286C-45D6-BE58-83E3F42DB96D} = {DD2E4647-7125-4CE3-9BA5-B45A26113A31}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {492C97B1-706A-4357-B3F7-EFB6AFB1F6C6}

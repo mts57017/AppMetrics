@@ -20,7 +20,8 @@ var packPaths        = new [] {
                                 Directory("./src/App.Metrics.Reporting.GrafanaCloudHostedMetrics"), 
 								Directory("./src/App.Metrics.Formatters.GrafanaCloudHostedMetrics"),
                                 Directory("./src/App.Metrics.Reporting.InfluxDB"), 
-								Directory("./src/App.Metrics.Formatters.InfluxDB") 
+								Directory("./src/App.Metrics.Formatters.InfluxDB"),
+                                Directory("./src/App.Metrics.Formatters.Prometheus")
 						};
 var buildArtifacts      = Directory("./artifacts");
 

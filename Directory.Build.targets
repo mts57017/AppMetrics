@@ -31,6 +31,7 @@
     <PackageReference Update="App.Metrics.Reporting.GrafanaCloudHostedMetrics" Version="$(AppMetricsVersion)" />
     <PackageReference Update="App.Metrics.Formatters.InfluxDB" Version="$(AppMetricsVersion)" />
     <PackageReference Update="App.Metrics.Reporting.InfluxDB" Version="$(AppMetricsVersion)" />
+    <PackageReference Update="App.Metrics.Formatters.Prometheus" Version="$(AppMetricsVersion)" />
 
     <!-- AspNetCore -->
     <PackageReference Update="App.Metrics.AspNetCore" Version="$(AppMetricsVersion)" />
