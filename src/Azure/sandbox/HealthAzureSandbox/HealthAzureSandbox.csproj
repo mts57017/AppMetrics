@@ -3,6 +3,10 @@
 	<Import Project="..\..\build\common.props" />
 
   <PropertyGroup>
+    <OutputType>exe</OutputType>
+  </PropertyGroup>
+
+  <PropertyGroup>
     <IsPackable>false</IsPackable>
   </PropertyGroup>
 
