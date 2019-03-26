@@ -10,7 +10,7 @@
 
   <ItemGroup>
     <PackageReference Include="App.Metrics.Core" />
-    <PackageReference Include="protobuf-net" Version="$(ProtobufNetVersion)" />
+    <PackageReference Include="protobuf-net" Version="2.4.0" />
   </ItemGroup>
 
 </Project>

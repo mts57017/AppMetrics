@@ -1,9 +1,5 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFrameworks>$(StandardTest)</TargetFrameworks>
-  </PropertyGroup>
-  
   <ItemGroup>
     <EmbeddedResource Include="JsonFiles\apdex.json" />
     <EmbeddedResource Include="JsonFiles\counter.json" />

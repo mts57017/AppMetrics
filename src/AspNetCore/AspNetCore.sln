@@ -25,7 +25,6 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{07876CE3-350D-45E9-8BAD-89D35A3E1C58}"
 	ProjectSection(SolutionItems) = preProject
 		build\common.props = build\common.props
-		build\dependencies.props = build\dependencies.props
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "App.Metrics.AspNetCore.Integration.Facts", "test\App.Metrics.AspNetCore.Integration.Facts\App.Metrics.AspNetCore.Integration.Facts.csproj", "{92522DDA-8C3D-4084-9719-E01F601F49B4}"

@@ -9,6 +9,6 @@
 
     <ItemGroup>
         <PackageReference Include="App.Metrics.Core" />
-        <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="$(MicrosoftExtensionsVersion)" />
+        <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" />
     </ItemGroup>
 </Project>

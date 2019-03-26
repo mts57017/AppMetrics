@@ -3,21 +3,26 @@
   <Import Project="..\..\build\common.props" />
 
   <PropertyGroup>
-    <OutputType>exe</OutputType>
-    <TargetFrameworks>netcoreapp2.1</TargetFrameworks>
-    <TargetFrameworks Condition=" '$(OS)' == 'Windows_NT' ">$(TargetFrameworks);net461</TargetFrameworks>
-    <LangVersion>latest</LangVersion>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(OS)' != 'Windows_NT' ">
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(OS)' == 'Windows_NT' ">
+    <TargetFrameworks>netcoreapp2.2;net461</TargetFrameworks>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="App.Metrics.Health.Checks.Http" Version="$(AppMetricsHealthVersion)" />
-    <PackageReference Include="App.Metrics.Health.Checks.Network" Version="$(AppMetricsHealthVersion)" />
-    <PackageReference Include="App.Metrics.Health.Checks.Process" Version="$(AppMetricsHealthVersion)" />
-    <PackageReference Include="App.Metrics.Health.Reporting.Metrics" Version="$(AppMetricsHealthVersion)" />
-    <PackageReference Include="App.Metrics.Health.Reporting.Slack" Version="$(AppMetricsHealthVersion)" />
-    <PackageReference Include="Microsoft.AspNetCore" Version="$(AspNetCoreVersion)" />
-    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="$(AspNetCoreMvcVersion)" />
-    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="$(MicrosoftExtensionsVersion)" />
+    <PackageReference Include="App.Metrics.Health.Checks.Http" />
+    <PackageReference Include="App.Metrics.Health.Checks.Network" />
+    <PackageReference Include="App.Metrics.Health.Checks.Process" />
+    <PackageReference Include="App.Metrics.Health.Reporting.Metrics" />
+    <PackageReference Include="App.Metrics.Health.Reporting.Slack" />
+    <PackageReference Include="Microsoft.AspNetCore" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="2.2.0" />
     <PackageReference Include="Serilog.Sinks.Literate" Version="3.0.1-dev-00044" />
     <PackageReference Include="Serilog.Sinks.Seq" Version="4.0.1-dev-00155" />
     <PackageReference Include="Serilog.AspNetCore " Version="2.1.2-dev-00024" />

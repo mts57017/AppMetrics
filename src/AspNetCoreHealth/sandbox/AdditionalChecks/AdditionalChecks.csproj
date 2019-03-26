@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <Import Project="..\..\build\common.props" />
 
@@ -7,7 +7,7 @@
   </PropertyGroup>
   
   <ItemGroup>
-    <PackageReference Include="App.Metrics.Health" Version="$(AppMetricsHealthVersion)" />
+    <PackageReference Include="App.Metrics.Health" />
   </ItemGroup> 
 
 </Project>

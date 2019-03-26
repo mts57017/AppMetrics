@@ -10,9 +10,9 @@
     <PackageReference Include="App.Metrics.Health.Core" />
     <PackageReference Include="App.Metrics.Health.Extensions.Configuration" />
     <PackageReference Include="App.Metrics.Health.Extensions.DependencyInjection" />
-    <PackageReference Include="Microsoft.AspNetCore.Http.Extensions" Version="$(MicrosoftExtensionsVersion)" />
-    <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="$(MicrosoftExtensionsVersion)" />
-    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="$(MicrosoftExtensionsVersion)" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Extensions" />
+    <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" />
   </ItemGroup>
 
 </Project>

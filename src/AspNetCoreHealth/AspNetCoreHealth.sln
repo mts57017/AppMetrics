@@ -9,48 +9,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{2D805782-756
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{31A4DDB1-952E-4EED-96EF-29C669279A86}"
-	ProjectSection(SolutionItems) = preProject
-		.travis.yml = .travis.yml
-		AppMetrics.ruleset = AppMetrics.ruleset
-		appveyor.yml = appveyor.yml
-		global.json = global.json
-		stylecop.json = stylecop.json
-		version.props = version.props
-	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{DD2E4647-7125-4CE3-9BA5-B45A26113A31}"
 	ProjectSection(SolutionItems) = preProject
 		test\Directory.Build.props = test\Directory.Build.props
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cake", "Cake", "{99DA9961-5DF1-4EA9-B37A-BE346449F512}"
-	ProjectSection(SolutionItems) = preProject
-		build.cake = build.cake
-		build.ps1 = build.ps1
-		build.sh = build.sh
-		tools\packages.config = tools\packages.config
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Git", "Git", "{3B3721C0-41F4-48D5-92AC-0AE97D94031D}"
-	ProjectSection(SolutionItems) = preProject
-		CONTRIBUTING.md = CONTRIBUTING.md
-		GitReleaseManager.yaml = GitReleaseManager.yaml
-		ISSUE_TEMPLATE.md = ISSUE_TEMPLATE.md
-		PULL_REQUEST_TEMPLATE.md = PULL_REQUEST_TEMPLATE.md
-		README.md = README.md
-	EndProjectSection
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sandbox", "sandbox", "{C0BC96C5-46E1-4323-9C5D-58D9A96549CD}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sanbox", "Sanbox", "{F1ECA197-26EE-4A52-8026-D906C14685A2}"
-	ProjectSection(SolutionItems) = preProject
-		sandbox\generic_grafana_dashboard_demo.gif = sandbox\generic_grafana_dashboard_demo.gif
-	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{07876CE3-350D-45E9-8BAD-89D35A3E1C58}"
 	ProjectSection(SolutionItems) = preProject
 		build\common.props = build\common.props
-		build\dependencies.props = build\dependencies.props
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "App.Metrics.AspNetCore.Health", "src\App.Metrics.AspNetCore.Health\App.Metrics.AspNetCore.Health.csproj", "{AD27983B-4B95-44BB-A75B-C68520158C06}"
@@ -106,9 +75,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{99DA9961-5DF1-4EA9-B37A-BE346449F512} = {31A4DDB1-952E-4EED-96EF-29C669279A86}
-		{3B3721C0-41F4-48D5-92AC-0AE97D94031D} = {31A4DDB1-952E-4EED-96EF-29C669279A86}
-		{F1ECA197-26EE-4A52-8026-D906C14685A2} = {31A4DDB1-952E-4EED-96EF-29C669279A86}
 		{07876CE3-350D-45E9-8BAD-89D35A3E1C58} = {31A4DDB1-952E-4EED-96EF-29C669279A86}
 		{AD27983B-4B95-44BB-A75B-C68520158C06} = {2D805782-756E-4C98-B22E-F502BEE95318}
 		{951AA943-DB5A-4765-9923-C713DDC8FB5C} = {DD2E4647-7125-4CE3-9BA5-B45A26113A31}

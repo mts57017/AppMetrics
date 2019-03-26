@@ -4,7 +4,6 @@
     <Description>App Metrics ASP.NET Core core components.</Description>
     <TargetFramework>netstandard2.0</TargetFramework>
     <RootNamespace>App.Metrics.AspNetCore</RootNamespace>
-    <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <PackageTags>appmetrics;aspnetcore;metrics</PackageTags>
   </PropertyGroup>
 
@@ -12,9 +11,9 @@
     <PackageReference Include="App.Metrics.Core" />
     <PackageReference Include="App.Metrics.Extensions.Configuration" />
     <PackageReference Include="App.Metrics.Extensions.DependencyInjection" />
-    <PackageReference Include="Microsoft.AspNetCore.Http.Extensions" Version="$(MicrosoftExtensionsVersion)" />
-    <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="$(MicrosoftExtensionsVersion)" />
-    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="$(MicrosoftExtensionsVersion)" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Extensions" />
+    <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" />
   </ItemGroup>
 
   <ItemGroup>

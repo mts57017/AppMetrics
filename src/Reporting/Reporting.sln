@@ -24,7 +24,6 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{82BE5E48-3A8F-4B09-8A3A-03448C6D2B4D}"
 	ProjectSection(SolutionItems) = preProject
 		build\common.props = build\common.props
-		build\dependencies.props = build\dependencies.props
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "App.Metrics.Reporting.Http", "src\App.Metrics.Reporting.Http\App.Metrics.Reporting.Http.csproj", "{A4FCA5FE-5866-419D-B2BE-AAF31751C476}"

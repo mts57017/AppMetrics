@@ -1,4 +1,3 @@
 <Project>
-	<Import Project="dependencies.props" />
 	<Import Project="..\..\..\build\shared.props" />
 </Project>

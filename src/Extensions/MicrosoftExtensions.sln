@@ -18,7 +18,6 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{07876CE3-350D-45E9-8BAD-89D35A3E1C58}"
 	ProjectSection(SolutionItems) = preProject
 		build\common.props = build\common.props
-		build\dependencies.props = build\dependencies.props
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "App.Metrics.Extensions.Configuration", "src\App.Metrics.Extensions.Configuration\App.Metrics.Extensions.Configuration.csproj", "{65201425-CEDF-46CA-AA1A-2557AD66E067}"

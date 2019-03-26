@@ -1,9 +1,5 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFrameworks>$(StandardTest)</TargetFrameworks>
-  </PropertyGroup>
-
   <ItemGroup>
     <EmbeddedResource Include="JsonFiles\healthstatus.json" />
     <EmbeddedResource Include="JsonFiles\healthstatus_null_healthy.json" />

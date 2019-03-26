@@ -15,7 +15,6 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{07876CE3-350D-45E9-8BAD-89D35A3E1C58}"
 	ProjectSection(SolutionItems) = preProject
 		build\common.props = build\common.props
-		build\dependencies.props = build\dependencies.props
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "App.Metrics.Health.Checks.AzureStorage", "src\App.Metrics.Health.Checks.AzureStorage\App.Metrics.Health.Checks.AzureStorage.csproj", "{38E7AD0C-9792-4D2D-8C2C-9D9CE6BA210B}"
