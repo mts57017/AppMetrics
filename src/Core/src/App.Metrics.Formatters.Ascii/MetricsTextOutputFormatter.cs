@@ -47,7 +47,7 @@ namespace App.Metrics.Formatters.Ascii
         public MetricFields MetricFields { get; set; }
 
         /// <inheritdoc />
-        public Task WriteAsync(
+        public async Task WriteAsync(
             Stream output,
             MetricsDataValueSource metricsData,
             CancellationToken cancellationToken = default)
@@ -68,14 +68,11 @@ namespace App.Metrics.Formatters.Ascii
                     _options.MetricNameFormatter))
                 {
                     serializer.Serialize(textWriter, metricsData, MetricFields);
+                    await textWriter.EndAsync();
                 }
             }
 
-#if NETSTANDARD1_6
-            return Task.CompletedTask;
-#else
-            return AppMetricsTaskHelper.CompletedTask();
-#endif
+            return;
         }
     }
 }

@@ -36,6 +36,7 @@ namespace App.Metrics.Formatters.Ascii.Facts
                 using (var writer = new MetricSnapshotTextWriter(sw))
                 {
                     serializer.Serialize(writer, _fixture.Metrics.Snapshot.Get(), fields);
+                    writer.EndAsync();
                 }
 
                 // Assert
@@ -59,6 +60,7 @@ namespace App.Metrics.Formatters.Ascii.Facts
                 using (var packer = new MetricSnapshotTextWriter(sw, metricNameFormatter: (context, name) => $"{context}---{name}"))
                 {
                     serializer.Serialize(packer, _fixture.Metrics.Snapshot.Get(), fields);
+                    packer.EndAsync();
                 }
 
                 // Assert

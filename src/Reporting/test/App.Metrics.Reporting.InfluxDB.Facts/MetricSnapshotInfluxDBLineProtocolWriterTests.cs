@@ -469,6 +469,7 @@ namespace App.Metrics.Reporting.InfluxDB.Facts
                 using (var packer = new MetricSnapshotInfluxDbLineProtocolWriter(sw, settings.MetricNameFormatter))
                 {
                     serializer.Serialize(packer, dataValueSource, fields);
+                    packer.End();
                 }
 
                 sw.ToString().Should().Be(expected);

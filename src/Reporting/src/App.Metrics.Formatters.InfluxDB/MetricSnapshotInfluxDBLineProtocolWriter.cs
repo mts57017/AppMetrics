@@ -6,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Threading.Tasks;
 using App.Metrics.Formatters.InfluxDB.Internal;
 using App.Metrics.Serialization;
 
@@ -57,6 +58,11 @@ namespace App.Metrics.Formatters.InfluxDB
             Dispose(true);
         }
 
+        public Task End()
+        {
+            return _points.WriteAsync(_textWriter);
+        }
+
         /// <summary>
         /// Writes the specific metrics and tags
         /// </summary>
@@ -92,7 +98,7 @@ namespace App.Metrics.Formatters.InfluxDB
 
             _points.Add(new LineProtocolPointLegacy(measurement, fields, tags, timestamp));
         }
-
+        
         /// <summary>
         /// Releases unmanaged and - optionally - managed resources.
         /// </summary>
@@ -101,7 +107,6 @@ namespace App.Metrics.Formatters.InfluxDB
         {
             if (disposing)
             {
-                _points.Write(_textWriter);
                 _textWriter?.Close();
                 _textWriter?.Dispose();
             }

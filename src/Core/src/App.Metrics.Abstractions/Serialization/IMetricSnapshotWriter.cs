@@ -4,6 +4,7 @@
 
 using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace App.Metrics.Serialization
 {
@@ -42,5 +43,7 @@ namespace App.Metrics.Serialization
             IEnumerable<object> values,
             MetricTags tags,
             DateTime timestamp);
+
+        Task EndAsync();
     }
 }

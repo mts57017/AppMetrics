@@ -27,6 +27,7 @@ namespace MetricsReportingSandboxMvc
                                    builder.Report.Using<SimpleConsoleMetricsReporter>(TimeSpan.FromSeconds(2));
                                })
                             .UseMetrics()
+                            .UseKestrel(options => options.AllowSynchronousIO = true)
                             .UseSerilog()
                             .UseStartup<Startup>()
                             .Build();

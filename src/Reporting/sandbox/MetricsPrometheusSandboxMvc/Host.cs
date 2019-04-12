@@ -37,6 +37,7 @@ namespace MetricsPrometheusSandboxMvc
                                       endpointsOptions.MetricsEndpointOutputFormatter = Metrics.OutputMetricsFormatters.GetType<MetricsPrometheusProtobufOutputFormatter>();
                                   };
                               })
+                          .UseKestrel(options => options.AllowSynchronousIO = true)
                           .UseSerilog()
                           .UseStartup<Startup>()
                           .UseUrls("http://localhost:1111")

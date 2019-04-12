@@ -6,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Threading.Tasks;
 using App.Metrics.Formatters.Ascii.Internal;
 using App.Metrics.Serialization;
 
@@ -81,6 +82,11 @@ namespace App.Metrics.Formatters.Ascii
             _textPoints.Add(new MetricsTextPoint(measurement, fields, tags, timestamp));
         }
 
+        public Task EndAsync()
+        {
+            return _textPoints.WriteAsync(_textWriter, _separator, _padding);
+        }
+
         /// <inheritdoc />
         public void Dispose()
         {
@@ -95,7 +101,6 @@ namespace App.Metrics.Formatters.Ascii
         {
             if (disposing)
             {
-                _textPoints.Write(_textWriter, _separator, _padding);
                 _textWriter?.Dispose();
             }
         }

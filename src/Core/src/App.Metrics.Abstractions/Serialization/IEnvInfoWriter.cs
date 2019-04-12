@@ -3,6 +3,7 @@
 // </copyright>
 
 using System;
+using System.Threading.Tasks;
 using App.Metrics.Infrastructure;
 
 namespace App.Metrics.Serialization
@@ -13,6 +14,6 @@ namespace App.Metrics.Serialization
         /// Writes the specified <see cref="EnvironmentInfo"/>.
         /// </summary>
         /// <param name="envInfo">The environment information to write.</param>
-        void Write(EnvironmentInfo envInfo);
+        Task Write(EnvironmentInfo envInfo);
     }
 }

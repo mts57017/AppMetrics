@@ -5,6 +5,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Threading.Tasks;
 using App.Metrics.Formatters.InfluxDB.Internal;
 using FluentAssertions;
 using Xunit;
@@ -40,7 +41,7 @@ namespace App.Metrics.Reporting.InfluxDB.Facts
         }
 
         [Fact]
-        public void Can_format_payload_correctly()
+        public async Task Can_format_payload_correctly()
         {
             var textWriter = new StringWriter();
             var fieldName = "key";
@@ -48,26 +49,26 @@ namespace App.Metrics.Reporting.InfluxDB.Facts
             var timestamp = new DateTime(2017, 1, 1, 1, 1, 1, DateTimeKind.Utc);
             var point = new LineProtocolPointSingleValue("measurement", fieldName, fieldValue, MetricTags.Empty, timestamp);
 
-            point.Write(textWriter);
+            await point.WriteAsync(textWriter);
 
             textWriter.ToString().Should().Be("measurement key=\"value\" 1483232461000000000");
         }
 
         [Fact]
-        public void Can_format_payload_correctly_without_providing_timestamp()
+        public async Task Can_format_payload_correctly_without_providing_timestamp()
         {
             var textWriter = new StringWriter();
             var fieldName = "key";
             var fieldValue = "value";
             var point = new LineProtocolPointSingleValue("measurement", fieldName, fieldValue, MetricTags.Empty);
 
-            point.Write(textWriter, false);
+            await point.WriteAsync(textWriter, false);
 
             textWriter.ToString().Should().Be("measurement key=\"value\"");
         }
 
         [Fact]
-        public void Can_format_payload_with_multiple_fields_correctly()
+        public async Task Can_format_payload_with_multiple_fields_correctly()
         {
             var textWriter = new StringWriter();
             var fieldsNames = new[] { "field1key", "field2key", "field3key" };
@@ -75,13 +76,13 @@ namespace App.Metrics.Reporting.InfluxDB.Facts
             var timestamp = new DateTime(2017, 1, 1, 1, 1, 1, DateTimeKind.Utc);
             var point = new LineProtocolPointMultipleValues("measurement", fieldsNames, fieldsValues, MetricTags.Empty, timestamp);
 
-            point.Write(textWriter);
+            await point.WriteAsync(textWriter);
 
             textWriter.ToString().Should().Be("measurement field1key=\"field1value\",field2key=2i,field3key=f 1483232461000000000");
         }
 
         [Fact]
-        public void Can_format_payload_with_tags_correctly()
+        public async Task Can_format_payload_with_tags_correctly()
         {
             var textWriter = new StringWriter();
             var fieldName = "key";
@@ -90,7 +91,7 @@ namespace App.Metrics.Reporting.InfluxDB.Facts
             var timestamp = new DateTime(2017, 1, 1, 1, 1, 1, DateTimeKind.Utc);
             var point = new LineProtocolPointSingleValue("measurement", fieldName, fieldValue, tags, timestamp);
 
-            point.Write(textWriter);
+            await point.WriteAsync(textWriter);
 
             textWriter.ToString().Should().Be("measurement,tagkey=tagvalue key=\"value\" 1483232461000000000");
         }

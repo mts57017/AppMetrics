@@ -64,6 +64,7 @@ namespace App.Metrics.Formatters.InfluxDB
                     _options.MetricNameFormatter))
                 {
                     serializer.Serialize(textWriter, metricsData, MetricFields);
+                    textWriter.End();
                 }
             }
 
