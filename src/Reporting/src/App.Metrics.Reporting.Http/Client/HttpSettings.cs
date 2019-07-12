@@ -35,5 +35,10 @@ namespace App.Metrics.Reporting.Http.Client
         ///     The basic auth username.
         /// </value>
         public string UserName { get; set; }
+
+        /// <summary>
+        /// Gets or sets the auth token to use with requests
+        /// </summary>
+        public string AuthorizationToken { get; set; }
     }
 }
