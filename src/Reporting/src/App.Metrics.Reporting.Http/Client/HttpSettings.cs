@@ -40,5 +40,10 @@ namespace App.Metrics.Reporting.Http.Client
         /// Gets or sets the auth token to use with requests
         /// </summary>
         public string AuthorizationToken { get; set; }
+
+        /// <summary>
+        /// Gets or sets the value to allow insecure ssl, typically used for self-signed certs
+        /// </summary>
+        public bool AllowInsecureSsl { get; set; }
     }
 }
